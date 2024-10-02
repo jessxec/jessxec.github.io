@@ -1,0 +1,376 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+p, li, td {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+p {
+    margin: -1em 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Pirata One", system-uis;
+    font-size: 2em;
+    color: #235a95;
+    
+}
+
+h1 {
+    font-family: "Pirata One", system-uis;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto 0;
+}
+
+/** Header **/
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 3em;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+#hero {
+    height: 100vh;
+    background-image: url('images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#herotext {
+    display: flex;
+    width: 100%;
+    height: 65%;
+    color: white;
+}
+
+#hello {
+    text-align: left;
+    padding-right: 30%;
+    padding-left: 5%;
+    margin: auto;
+    width: 50%;
+}
+
+#outnow {
+    text-align: right;
+    padding-left: 30%;
+    padding-right: 5%;
+    margin: auto;
+    width: 50%;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 3% auto;
+}
+
+/** Album **/
+
+#album {
+    display: flex;
+    justify-content: space-between; /* Ensures #albumimg and #tracklist are side by side */
+    align-items: center; /* Vertically centers the content */
+    width: 100%;
+    background-color: #eecaca;
+    padding: 5%;
+    box-sizing: border-box; /* To include padding within the width */
+}
+
+#albumimg {
+    width: 50%;
+    text-align: center;
+}
+
+#tracklist {
+    width: 50%;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+#album img {
+    width: 80%;
+    height: auto;
+}
+
+
+#tracklist ol {
+    column-count: 2;
+    column-gap: 15%;
+    display: inline-block;
+    text-align: left;
+}
+
+/** Tour **/
+#tour {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#tourdates {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+    
+}
+
+#vip {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+/** Merch **/
+
+#merch {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #eecaca;
+    overflow: hidden;
+}
+
+#merch img {
+    width: 100%;
+    height: auto;
+}
+
+.item {
+    width: 25%;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+/** Videos **/
+#videos {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.video {
+    width: 46%; /* Make sure each video takes 50% of the container's width */
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+    position: relative; /* Required for absolute positioning of the iframe */
+    padding-top: 28.125%; /* Padding based on a 16:9 aspect ratio */
+    height: 0; /* Set height to zero, and the padding will determine the height */
+    overflow: hidden;
+    margin: 2%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/** Newsletter **/
+
+#news {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #eecaca;
+}
+
+#signup {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#news img {
+    width: 50%;
+    height: auto;
+}
+
+input[type=email] {
+    border-radius: 20px;
+    border: 1px solid #2d9fd9;
+    color: #c1c1c1;
+    width: 100%;
+    height: 3em;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+}
+
+/** Footer **/
+footer {
+    text-align: center;
+    padding: 2em;
+}
+
+/** Media Queries **/
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    #logo {
+        font-size: 1.2rem;
+    }
+
+    p, li, td {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    nav ul li a {
+        padding: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    #hello {
+        padding-right: 20%;
+    }
+    
+    #outnow {
+        padding-left: 20%;
+    }
+
+    #tracklist ol {
+        column-count: 1;
+    }
+
+    .item {
+        width: 50%;
+        padding: 2em;
+        
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #logo {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+    }
+
+    nav {
+        padding-top: -3em;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #herotext  {
+        display: flex; 
+        flex-direction: column;
+        vertical-align: bottom;
+    }
+
+    #hello, #outnow {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #album {
+        display: block;
+        width:100%
+    }
+
+    #albumimg {
+        width: 100%;
+    }
+
+    #tracklist {
+        width: 100%;
+    }
+
+    #tourdates, #vip, .item, #signup {
+        width: 100%;
+    }
+
+    .video {
+        width: 96%;
+    }
+
+    #news img {
+        width: 100%;
+    }
+
+    .item{
+        padding: 2em;
+    }
+
+
+}
